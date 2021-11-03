@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="VKLServer" default="compile" basedir=".">
+
+	<!-- Import external properties -->
+	<property file="build.properties"/>
+
+	<!-- Import environment variables, use default values if not set -->
+	<property environment="env"/>
+	<property name="env.JAVA_HOME" location="C:\jdk1.4.1_02"/>
+
+        <!-- set global properties for this build -->
+
+        <property name="src.properties" value="properties"/>
+        <property name="src.main" value="."/>
+        <property name="build" value="bin"/>
+        <property name="dist"  value="dist"/>
+        <property name="externalClasses"  value="ext"/>
+
+
+        <path id="java.classpath">
+	  <pathelement location="C:\Nokia\Devices\Nokia_3510i_MIDP_SDK_v1_0\lib\classes.zip"/>
+        </path>
+
+        <target name="init">
+          <!-- Create the time stamp -->
+          <tstamp/>
+          <!-- Create the build directory structure used by compile -->
+          <mkdir dir="${build}"/>
+          <mkdir dir="${dist}"/>
+          <mkdir dir="${build}/${src.properties}"/>
+        </target>
+
+        <target name="compile" depends="init">
+          <!-- Compile the java code from ${src} into ${build} -->
+          <javac destdir="${build}" classpathref="java.classpath">
+            <src path="${src.main}"/>
+          </javac>
+          <!--<copy todir="${build}/${src.properties}">
+	        <fileset dir="${src.main}/${src.properties}"/>
+	      </copy>-->
+        </target>
+
+</project>

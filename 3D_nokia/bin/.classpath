@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path=""/>
+    <classpathentry kind="lib" path="C:/Nokia/Devices/Nokia_3510i_MIDP_SDK_v1_0/lib/classes.zip"/>
+    <classpathentry kind="output" path="bin"/>
+</classpath>

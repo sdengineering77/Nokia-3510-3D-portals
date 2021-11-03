@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path=""/>
+    <classpathentry kind="var" path="JRE_LIB" rootpath="JRE_SRCROOT" sourcepath="JRE_SRC"/>
+    <classpathentry kind="lib" path="C:/Documents and Settings/DaSedney/Desktop/MathFP_CLDC1_2_2.zip"/>
+    <classpathentry kind="output" path="build"/>
+</classpath>

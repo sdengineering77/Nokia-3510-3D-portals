@@ -1,0 +1,9 @@
+MIDlet-Name: POC_3D
+MIDlet-Version: 0.0.1
+MIDlet-Vendor: MyCompany
+MicroEdition-Profile: MIDP-1.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Jar-URL: POC_3D.jar
+MIDlet-Jar-Size: 26085
+MIDlet-1: GameMidlet, , test.GameMidlet
+
